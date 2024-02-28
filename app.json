@@ -1,0 +1,81 @@
+{
+    "name": "THALAPATHY-FILTER-BOT",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "auto-filter",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/1238muj/THALAPATHY-FILTER-BOT",
+    "repository": "https://github.com/1238muj/THALAPATHY-FILTER-BOT",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "6981281170:AAFQCmwIZybp6mi9aNAdkriKXnh8ElKCLkI",
+            "required": true
+        },
+        "API_ID": {
+            "description": "20227614",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "b9268f7d01884a3d740ba17d0ad8754b",
+            "required": true
+        },
+        "CHANNELS": {
+            "description": "-1002008544885",
+            "required": false
+        },
+        "ADMINS": {
+            "description": "6001922744",
+            "required": true
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "-1001949340728",
+            "required": true
+        },
+        "AUTH_USERS": {
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "required": false
+        },
+        "AUTH_CHANNEL": {
+            "description": "-1002116131647",
+            "required": false
+        },
+        "DATABASE_URI": {
+            "description": "mongodb+srv://razer358:razer358@cluster0.yuffxqt.mongodb.net/?retryWrites=true&w=majority",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Cluster0",
+            "required": false
+        },
+        "COLLECTION_NAME": {
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
+            "value": "Telegram_files",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
