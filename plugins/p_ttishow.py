@@ -9,7 +9,7 @@ from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
 
-"""-----------------------------------------https://t.me/Razer358 --------------------------------------"""
+"""-----------------------------------------https://t.me/Oneplus5999 --------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -38,10 +38,10 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('ɢʀᴏᴜᴘ', url="t.me/Prime_Movieshd"),
-                    InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="t.me/MoviezProviderz")
+                    InlineKeyboardButton('ɢʀᴏᴜᴘ', url="t.me/moviesprimiumworld"),
+                    InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="t.me/mahi4999db")
                  ],[
-                    InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/Razer358")
+                    InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/Oneplus5999")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -61,10 +61,10 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('ɢʀᴏᴜᴘ', url="t.me/Prime_Movieshd"),
-                                                                           InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="t.me/MoviezProviderz")
+                                                                           InlineKeyboardButton('ɢʀᴏᴜᴘ', url="t.me/moviesprimiumworld"),
+                                                                           InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="t.me/mahi4999db")
                                                                         ],[
-                                                                           InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/Razer358")
+                                                                           InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/Oneplus5999")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
@@ -89,8 +89,8 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ',url="https://t.me/MoviezProviderz"),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url="https://t.me/Razer358")
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ',url="https://t.me/mahi4999db"),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url="https://t.me/Oneplus5999")
         ],[
             InlineKeyboardButton('ᴜꜱᴇ ᴍᴇ ʜᴇʀᴇ', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
@@ -194,7 +194,7 @@ async def gen_invite(bot, message):
 
 @Client.on_message(filters.command('ban') & filters.user(ADMINS))
 async def ban_a_user(bot, message):
-    # https://t.me/Razer358
+    # https://t.me/Oneplus5999
     if len(message.command) == 1:
         return await message.reply('Give me a user id / username')
     r = message.text.split(None)
@@ -261,7 +261,7 @@ async def unban_a_user(bot, message):
     
 @Client.on_message(filters.command('users') & filters.user(ADMINS))
 async def list_users(bot, message):
-    # https://t.me/Razer358
+    # https://t.me/Oneplus5999
     raju = await message.reply('Getting List Of Users')
     users = await db.get_all_users()
     out = "Users Saved In DB Are:\n\n"
