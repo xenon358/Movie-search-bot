@@ -75,10 +75,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton(
                     "📌 𝓙ᴏɪɴ 𝓞ᴜʀ 𝓒ʜᴀɴɴᴇʟ 📌", url=invite_link.invite_link
-                ),
-                InlineKeyboardButton('✨ 𝐉𝐎𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 2 ✨', url='https://t.me/Prime_Movieshd')
-            ],[
-                InlineKeyboardButton('👻 Must Join Backup Group 👻', url='https://t.me/Movie_Search_Bots')
+                )
             ]
         ]
 
